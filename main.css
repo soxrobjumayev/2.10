@@ -1,0 +1,42 @@
+.logo1{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    margin-top: 250px;
+}
+
+.logo::after{
+    content: attr(data-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    font-weight: 700;
+    font-size: 100px;
+    color: rgb(179, 85, 85);
+}
+
+
+.logo{
+    width: 300px;
+    height: 300px;
+    margin-left: 100px;
+    border-radius: 50%;
+    background-color: rgba(179, 85, 85, 0.494);
+    border: 5px solid rgba(224, 64, 64, 0.675);
+    animation: logo 3s linear infinite;
+    
+}
+@keyframes logo {
+    0%{
+        transform: scale(1);
+        box-shadow: inset 10px 20px 205px red;
+    }
+
+   
+
+   40%{
+        transform: scale(1.5);
+        box-shadow: inset 10px 20px 205px red;
+    }
+}
